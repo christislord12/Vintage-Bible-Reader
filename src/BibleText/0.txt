@@ -1,0 +1,9 @@
+Welcome to the Bible Reader!
+
+Use the right -> and left <- arrow keys to switch books
+Use the up and down arrow keys or the mouse to scroll up and down
+
+Use the buttons above to change books
+Use the buttons below to scroll up and down
+
+Created with Panda3D
