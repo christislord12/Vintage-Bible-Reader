@@ -1,1 +1,0 @@
-Currently, due to issues with text rendering, only the image gallery is available in WebGl.
