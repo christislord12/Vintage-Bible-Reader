@@ -126,15 +126,20 @@ class Game(DirectObject):
         self.image.reparentTo(render) 
         self.image.setPos(7.55,30,-6)   
         base.trackball.node().setPos(-7.55,0,6)
+        if self.currentbibleimage == 5:
+            self.image.setScale(4)
     def NextBibleImage(self):
         self.currentbibleimage = self.currentbibleimage + 1;
-        if self.currentbibleimage >= 8:
-            self.currentbibleimage = 7
+        if self.currentbibleimage >= 9:
+            self.currentbibleimage = 8
+
         self.image.removeNode()
         self.image = self.loadImageAsPlane("BibleImages/" + str(self.currentbibleimage) + ".jpg")
         self.image.reparentTo(render)
         self.image.setPos(7.55,30,-6)   
         base.trackball.node().setPos(-7.55,0,6)
+        if self.currentbibleimage == 5:
+            self.image.setScale(4)
     def loadImageAsPlane(self, filepath, yresolution = 600):
         tex = loader.loadTexture(filepath)
         tex.setBorderColor(Vec4(0,0,0,0))

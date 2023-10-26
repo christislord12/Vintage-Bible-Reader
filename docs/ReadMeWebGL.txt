@@ -1,0 +1,1 @@
+There is an issue in Firefox where it will give an error that says "Error occurred: BrowserFS.InMemory is undefined". These is a workaround for this error, click ok and wait about 5-10 seconds. Reload the page, and it should work.
